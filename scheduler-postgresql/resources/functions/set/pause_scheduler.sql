@@ -5,7 +5,7 @@ returns void
 as $$
   declare
     v_running_tasks_count   int;
-    v_end_wait              int;
+    v_end_wait              timestamp;
 begin
 
     v_end_wait   = clock_timestamp() + i_max_wait_sec  * interval '1 second';
